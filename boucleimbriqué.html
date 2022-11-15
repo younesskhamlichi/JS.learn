@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/81a41055e4.js" crossorigin="anonymous"></script>
+    <title>javascript</title>
+    <link rel="stylesheet" href="camini.css">
+</head>
+<header>
+    <h1>JS</h1>
+    <H5>.Learn</H5>
+    <div class="main-menu">
+        <ul class="menu-list">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./variable.html">Les variables</a></li>
+            <li><a href="./condition.html">Les conditions</a></li>
+            <li><a href="./fonction.html">Les fonctions</a></li>
+            <li><a>Les boucles</a>
+                <ul>
+                    <li><a href="./bouclefor.html">La boucle for</a></li>
+                    <li><a href="./bouclewhile.html">La boucle while</a></li>
+                    <li><a href="./boucleimbriqué.html">Les boucles imbriquées</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="chaine">Les chaines</a>
+                <ul>
+                    <li><a href="./chainecherche.html">recherche et supression dans un chaine</a></li>
+                    <li><a href="./chainecompter.html">compter le nombre de voyelles</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="tableau">Les tableaux</a>
+                <ul>
+                    <li><a href="./tableautri.html">tri d'un tableau</a></li>
+                    <li><a href="./tableaurecherche.html">recherche dans un tableau</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="contact">contact</a></li>
+        </ul>
+    </div>
+</header>
+<div class="icons">
+    <a href="./home.html"><i class="fa-solid fa-house"></i></a>
+    <a href="./variable.html"><i class="fa-solid fa-repeat"></i></a>
+    <a href="./condition.html"><i class="fa-solid fa-calendar-days"></i></a>
+    <a href="./fonction.html"><i class="fa-solid fa-calculator"></i></a>
+    <a href="./bouclefor.html"><i class="fa-solid fa-brain"></i></a>
+    <a href="./bouclewhile.html"><i class="fa-solid fa-box-open"></i></a>
+    <a href="./boucleimbriqué.html"><i class="fa-solid fa-print"></i></a>
+    <a href="./chainecherche.html"><i class="fa-sharp fa-solid fa-dumpster-fire"></i></a>
+    <a href="./chainecompter.html"><i class="fa-sharp fa-solid fa-list-ol"></i></a>
+    <a href="./tableautri.html"><i class="fa-solid fa-table"></i></a>
+    <a href="./tableaurecherche.html"><i class="fa-solid fa-diagram-predecessor"></i></a>
+    <a href="./contact.html"><i class="fa-solid fa-address-card"></i></a>
+    
+</div>
+
+<body>
+    <h2>.Losange en étoiles</h2>
+    <div class="line"></div>
+    <h4>Enoncé</h4>
+    <div class="variable" id="variable">
+        <p>Afficher la table de multiplication d’un nombre saisi par l’utilisateur dans un input.
+        </p>
+    </div>
+    <h4>Démo</h4>
+    <div class="variable" id="variable">
+        <div class="sectionlos2">
+            <p>Saisir la longueur des diagonales </p>
+            <input type="number" id="nombre">
+            <input type="button" value="dessiner" id="dessiner">
+            <div class="losange">
+                <P id="res"></P>
+            </div>
+        </div>
+
+        <div>
+            <script>
+                document.getElementById('dessiner').onclick = function () {
+                    let etoil = document.getElementById('nombre').value;
+                    let E, i, j, h, n, f;
+                    for (f = 1; f <= etoil; f++) {
+                        for (h = etoil; h >= f; h--) {
+                            document.getElementById('res').innerHTML += "&nbsp";
+                        }
+                        for (n = 1; n <= f; n++) {
+                            document.getElementById('res').innerHTML += "*";
+                        }
+                        document.getElementById('res').innerHTML += "<br>";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+     <h4>Code Source</h4>
+        <div class="variable" id="variable">
+            <textarea>
+                <script>
+                    document.getElementById('dessiner').onclick = function () {
+                        let etoil = document.getElementById('nombre').value;
+                        let E, i, j, h, n, f;
+                        for (f = 1; f <= etoil; f++) {
+                            for (h = etoil; h >= f; h--) {
+                                document.getElementById('res').innerHTML += "&nbsp";
+                            }
+                            for (n = 1; n <= f; n++) {
+                                document.getElementById('res').innerHTML += "*";
+                            }
+                            document.getElementById('res').innerHTML += "<br>";
+                        }
+                    }
+                </script>
+            </textarea>
+        </div>
+</body>
+<footer>
+    <div class="icon">
+        <a href="#" class="icon1"><i class="fa-brands fa-facebook">facebook</i></a>
+        <a href="#" class="icon2"><i class="fa-brands fa-instagram">instagram</i></a>
+        <a href="#" class="icon3"><i class="fa-brands fa-github">github</i></a>
+    </div>
+    <p class="copy">@Copy-right with github tools</p>
+</footer>

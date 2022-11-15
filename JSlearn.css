@@ -1,0 +1,636 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+
+#ran {
+    color: red;
+    font-size: large;
+    margin-left: 60px;
+}
+
+#tn {
+    color: rgb(0, 0, 0);
+    font-size: large;
+    margin-left: 200px;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    float: right;
+}
+
+a {
+    margin-top: 10px;
+}
+
+#cnt {
+    margin: 0%;
+    padding-left: 0%;
+    color: yellow;
+}
+
+header {
+    background-color: #000000;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    margin-top: 0%;
+    height: 80px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        z-index: 2;
+        position: fixed;
+
+    }
+
+    h1 {
+        padding-left: 25%;
+    }
+
+
+    #icons {
+        display: block;
+        color: aliceblue;
+        width: 100px;
+        height: 100px;
+
+    }
+    textarea{
+        height: 600px;
+    }
+
+    i {
+        color: yellow;
+        font-size: 20px;
+        margin-top: 0px;
+        padding-top: 10px;
+
+    }
+
+    .icons {
+        margin-top: 50px;
+        padding-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: 100%;
+        position: fixed;
+        padding-right: 10px;
+        margin-right: 10px;
+
+    }
+
+    a {
+        width: 1px;
+        font-size: 20px;
+    }
+
+    input.inpcal,
+    input.rescal,
+    input#btncal2.btncal {
+        margin-left: 0%;
+    }
+
+    h2 {
+        width: 250px;
+        padding-top: 100px;
+    }
+
+    footer div.icon {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    a.icon1,
+    a.icon2,
+    a.icon3 {
+        margin-left: 40px;
+        width: 5px;
+    }
+
+    .icon a i {
+        font-size: 11px;
+
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    div.definition {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: medium;
+
+    }
+
+    #variable {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.section2 {
+        width: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    img.photo2 {
+        width: 300px;
+        height: 200px;
+    }
+
+    p.copy {
+        margin-left: 25%;
+    }
+
+    div.definition p,
+    .par2 {
+        width: 320px;
+        margin-left: 0%;
+    }
+
+    img.photo {
+        margin: 0%;
+        margin-top: 30px;
+    }
+
+    div.icon {
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+.sectionlos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid;
+    border-radius: 20px;
+
+}
+
+.sectionlos2 {
+    margin: 20px;
+}
+
+
+.losange {
+    border: 1px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 30px;
+}
+
+.tri {
+    display: flex;
+    flex-direction: column;
+}
+
+#reh,
+#res {
+    margin-left: 30px;
+}
+
+#day,
+#month,
+#year {
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+#id {
+    color: yellow;
+}
+
+#check {
+    background-color: yellow;
+    border: 2px solid;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    -webkit-border-radius: 20PX;
+    -moz-border-radius: 20PX;
+    -ms-border-radius: 20PX;
+    -o-border-radius: 20PX;
+}
+
+.demo {
+    margin-left: 50px;
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 20px;
+    -webkit-border-radius: 20PX;
+    -moz-border-radius: 20PX;
+    -ms-border-radius: 20PX;
+    -o-border-radius: 20PX;
+}
+
+.resultat {
+    margin: 60px;
+    color: #000000;
+    border: 2px SOLID red;
+    height: 30px;
+}
+
+h1 {
+    font-size: 60px;
+    color: yellow;
+    font-style: oblique;
+    align-items: baseline;
+    margin-left: 20px;
+}
+
+H5 {
+    font-size: 20px;
+    color: yellow;
+    font-style: oblique;
+    align-items: baseline;
+    margin-right: 120px;
+    margin-top: 35px;
+}
+
+
+.main-menu ul li a {
+    padding: 20px;
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    background: #000000;
+}
+
+.main-menu ul li ul {
+    display: none;
+}
+
+.main-menu ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    color: rgb(0, 0, 0);
+}
+
+.main-menu ul li:hover a {
+    color: yellow;
+    border: 1px solid yellow;
+    border-radius: 0px;
+}
+
+.definition {
+    color: #000000;
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-right: 30px;
+}
+
+#generate,
+#btn,
+#dessiner,
+.generate {
+    background-color: yellow;
+    border: 2px solid;
+    width: fit-content;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: medium;
+
+}
+
+.photo {
+    width: 300px;
+    height: 250px;
+    margin: 30px;
+    margin-top: 5px;
+
+}
+
+.photo2 {
+    margin-top: 20px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    padding-top: 170px;
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+.line {
+    border: 2px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20PX;
+    -moz-border-radius: 20PX;
+    -ms-border-radius: 20PX;
+    -o-border-radius: 20PX;
+    width: 250px;
+    background-color: yellow;
+    height: 1px;
+    margin-left: 30px;
+}
+
+.section2 {
+    margin-left: 30PX;
+    margin-top: 60px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
+
+.photo3 {
+    width: 50%;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 300px;
+}
+
+.line2 {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 20PX;
+    -moz-border-radius: 20PX;
+    -ms-border-radius: 20PX;
+    -o-border-radius: 20PX;
+    width: 50%;
+    background-color: yellow;
+    height: 1px;
+    margin-left: 30px;
+}
+
+h4 {
+    margin: 40px;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    padding: 20px;
+    margin-bottom: 0%;
+    border: 2px solid;
+    border-radius: 40px 40px 40px 0px;
+    -webkit-border-radius: 40px 40px 40px 0PX;
+    -moz-border-radius: 40px 40px 40px 0PX;
+    -ms-border-radius: 40px 40px 40px 0PX;
+    -o-border-radius: 40px 40px 40px 0PX;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 90%;
+    margin-left: 30px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.variable {
+    margin-left: 40px;
+    border: 1px SOLID black;
+    height: auto;
+    padding: 15px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px 40px 40px 40px;
+    -webkit-border-radius: 0px 40px 40px 40px;
+    -moz-border-radius: 0px 40px 40px 40px;
+    -ms-border-radius: 0px 40px 40px 40px;
+    -o-border-radius: 0px 40px 40px 40px;
+}
+
+#voyel {
+    background-color: yellow;
+    border: solid 2px black;
+    margin-top: 10px;
+    margin: right 10PX;
+    border-radius: 20px;
+    width: 90%;
+    -webkit-border-radius: 20PX;
+    -moz-border-radius: 20PX;
+    -ms-border-radius: 20PX;
+    -o-border-radius: 20PX;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+
+.buttonpermuter {
+    width: 50px;
+    margin-top: 10px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+
+#input1,
+#input2,
+#input3,
+#input4,
+#input5,
+#input6,
+#input7,
+#input8,
+#input9,
+#input10,
+#inpt0,
+#inpt1,
+#inpt2,
+#inpt3,
+#inpt4,
+#inpt5,
+#inpt6,
+#inpt7,
+#inpt8,
+#inpt9,
+#inpt10 {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
+
+.buttonpermuter:hover {
+    border: 2px solid;
+}
+
+.left {
+    margin-top: 30px;
+}
+
+
+textarea {
+    margin-left: 40px;
+    width: 70%;
+    height: 400px;
+    border: 1px SOLID black;
+    height: 30px;
+    padding: 15px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px 40px 40px 40px;
+    -webkit-border-radius: 0px 40px 40px 40px;
+    -moz-border-radius: 0px 40px 40px 40px;
+    -ms-border-radius: 0px 40px 40px 40px;
+    -o-border-radius: 0px 40px 40px 40px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    color: yellow;
+    margin-left: 200px;
+}
+
+.copy {
+    margin-left: 550px;
+    color: gray;
+}
+
+.permutation {
+    padding-top: 30px;
+}
+
+.calculatrice {
+    padding-top: 30px;
+    margin-top: 0px;
+    border: 1px solid black;
+    border-radius: 30px;
+    -webkit-border-radius: 30PX;
+    -moz-border-radius: 30PX;
+    -ms-border-radius: 30PX;
+    -o-border-radius: 30PX;
+    margin-left: 40px;
+    width: 80%;
+}
+
+.navbar-btn {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    background-color: yellow;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-btn {
+        display: block;
+    }
+
+}
+
+.inpcal {
+    margin-left: 200px;
+    padding: 10px;
+}
+
+.btncal {
+    width: 52px;
+    background-color: #000000;
+    color: #ddd;
+}
+
+#btncal2 {
+    margin-left: 200px;
+
+}
+
+.rescal {
+    margin-left: 200px;
+    width: 219px;
+}
+
+
+#navbar-primary.navbar-default {
+    background: transparent;
+    border: none;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    float: none;
+}
+
+a {
+    padding-left: 30px;
+    padding-right: 30px;
+}

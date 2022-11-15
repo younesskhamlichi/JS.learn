@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/81a41055e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="camini.css">
+    <title>JS.Learn</title>
+</head>
+
+<header>
+    <h1>JS</h1>
+    <H5>.Learn</H5>
+    <div class="main-menu">
+        <ul class="menu-list">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./variable.html">Les variables</a></li>
+            <li><a href="./condition.html">Les conditions</a></li>
+            <li><a href="./fonction.html">Les fonctions</a></li>
+            <li><a href="">Les boucles</a>
+                <ul>
+                    <li><a href="./bouclefor.html">La boucle for</a></li>
+                    <li><a href="./bouclewhile.html">La boucle while</a></li>
+                    <li><a href="./boucleimbriqué.html">Les boucles imbriquées</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="chaine">Les chaines</a>
+                <ul>
+                    <li><a href="./chainecherche.html">recherche et supression dans un chaine</a></li>
+                    <li><a href="./chainecompter.html">compter le nombre de voyelles</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="tableau">Les tableaux</a>
+                <ul>
+                    <li><a href="./tableautri.html">tri d'un tableau</a></li>
+                    <li><a href="./tableaurecherche.html">recherche dans un tableau</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="contact">contact</a></li>
+        </ul>
+    </div>
+</header>
+<div class="icons">
+    <a href="./home.html"><i class="fa-solid fa-house"></i></a>
+    <a href="./variable.html"><i class="fa-solid fa-repeat"></i></a>
+    <a href="./condition.html"><i class="fa-solid fa-calendar-days"></i></a>
+    <a href="./fonction.html"><i class="fa-solid fa-calculator"></i></a>
+    <a href="./bouclefor.html"><i class="fa-solid fa-brain"></i></a>
+    <a href="./bouclewhile.html"><i class="fa-solid fa-box-open"></i></a>
+    <a href="./boucleimbriqué.html"><i class="fa-solid fa-print"></i></a>
+    <a href="./chainecherche.html"><i class="fa-sharp fa-solid fa-dumpster-fire"></i></a>
+    <a href="./chainecompter.html"><i class="fa-sharp fa-solid fa-list-ol"></i></a>
+    <a href="./tableautri.html"><i class="fa-solid fa-table"></i></a>
+    <a href="./tableaurecherche.html"><i class="fa-solid fa-diagram-predecessor"></i></a>
+    <a href="./contact.html"><i class="fa-solid fa-address-card"></i></a>
+    
+</div>
+<main>
+    <h2>.Valider une date</h2>
+    <div class="line"></div>
+    <h4>Enoncé</h4>
+    <div class="variable" id="variable">
+        <P>écrire un script qui permet deux nombre saisair dans deux inputs </P>
+    </div>
+    <h4>Démo</h4>
+    <div class="demo">
+        <input type="text" placeholder="DD" id="day" />
+        <input type="text" placeholder="MM" id="month" />
+        <input type="text" placeholder="YYYY" id="year" />
+        <button id="check">valider</button>
+        <h2 id="res"></h2>
+    </div>
+    <h4>Code Source</h4>
+    <textarea name="text" cols="30" rows="10">
+        let btnCheck = document.getElementById("check");
+        let result = document.getElementById("res");
+        btnCheck.addEventListener('click', function () {
+            var j, m, a;
+            var cas1, cas2, cas3, cas4;
+    
+            j = document.getElementById("day").value;
+            m = document.getElementById("month").value;
+            a = document.getElementById("year").value;
+    
+            cas1 = a > 0 && (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12) && (j >= 1 && j <= 31);
+            cas2 = a > 0 && (m == 4 || m == 6 || m == 9 || m == 11) && (j >= 1 && j <= 30);
+            cas3 = a > 0 && m == 2 && a % 4 == 0 && j >= 1 && j <= 29;
+            cas4 = a > 0 && m == 2 && a % 4 != 0 && j >= 1 && j <= 28;
+    
+            if (cas1 || cas2 || cas3 || cas4) {
+                document.getElementById("res").innerHTML = "Date is valid" ; 
+            }
+            else {
+                document.getElementById("res").innerHTML = "Date is not valid";
+    
+            }
+        });
+    </textarea>
+</main>
+<script>
+    let btnCheck = document.getElementById("check");
+    let result = document.getElementById("res");
+    btnCheck.addEventListener('click', function () {
+        var j, m, a;
+        var cas1, cas2, cas3, cas4;
+
+        j = document.getElementById("day").value;
+        m = document.getElementById("month").value;
+        a = document.getElementById("year").value;
+
+        cas1 = a > 0 && (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12) && (j >= 1 && j <= 31);
+        cas2 = a > 0 && (m == 4 || m == 6 || m == 9 || m == 11) && (j >= 1 && j <= 30);
+        cas3 = a > 0 && m == 2 && a % 4 == 0 && j >= 1 && j <= 29;
+        cas4 = a > 0 && m == 2 && a % 4 != 0 && j >= 1 && j <= 28;
+
+        if (cas1 || cas2 || cas3 || cas4) {
+            document.getElementById("res").innerHTML = "La Date est valide";
+        }
+        else {
+            document.getElementById("res").innerHTML = "***La Date n'est pas valide!!***";
+
+        }
+    });
+</script>
+<footer>
+    <div class="icon">
+        <a href="#" class="icon1" class="facebook"><i class="fa-brands fa-facebook">facebook</i></a>
+        <a href="#" class="icon2"><i class="fa-brands fa-instagram">instagram</i></a>
+        <a href="#" class="icon3"><i class="fa-brands fa-github">github</i></a>
+    </div>
+    <p class="copy">@Copy-right with github tools</p>
+</footer>
